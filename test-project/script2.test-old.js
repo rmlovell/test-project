@@ -3,7 +3,7 @@ import { getPeople } from './script2.js';
 
 it('calls swapi to get people', () => {
     //expect.assertions(1)
-    return getPeople.getPeople(fetch).then(data => {
+    return getPeople(fetch).then(data => {
         expect(data.count).toEqual(82);
     })
 })
